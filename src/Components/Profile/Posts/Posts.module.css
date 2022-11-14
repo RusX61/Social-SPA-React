@@ -1,0 +1,8 @@
+.posts{
+ grid-area: p;
+}
+
+.newPost{
+    font-size: 20px;
+}
+

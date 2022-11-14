@@ -1,0 +1,37 @@
+.profile{
+    grid-area: c;
+    display: grid;
+    grid-template-areas:
+          "u"
+            "p";
+
+    grid-template-rows: 2fr 10fr;
+    background-image: url('../img/BACK-PROFILE.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #00133f;
+    color: #f0f8ff;
+    height: 100vh;
+}
+
+
+.userInfo{
+    grid-area: u;
+    display: grid;
+    grid-template-areas:
+          "avatar empty bio";
+
+    grid-template-columns: 1fr  1fr 1fr;
+
+}
+
+.avatar img{
+    grid-area: avatar;
+    padding: 10%;
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+.bio{
+    grid-area: bio;
+}
