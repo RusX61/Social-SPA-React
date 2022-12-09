@@ -1,0 +1,21 @@
+.sender{
+    background-color: rgba(54, 225, 164, 0.69);
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0 10px 10px;
+    padding-right: 10px;
+}
+.avatar{
+    margin: 10px;
+}
+
+.name{
+    flex-basis:auto;
+}
+
+.avatar img{
+    width: 50px;
+    border-radius: 50%;
+}

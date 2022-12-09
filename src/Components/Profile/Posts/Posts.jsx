@@ -1,33 +1,19 @@
 import s from './Posts.module.css'
 import Post from "./Post";
-import Like from "./Like";
+import NewPost from "../NewPost/NewPost";
 
-const Posts = () => {
+const Posts = (props) => {
+let postsElements = props.postData
+    .map(p=><Post
+        message={p.message}
+        likesCount={p.likesCount}
+        repostCount={p.repostCount}
+        date={p.date}/>)
+
     return(
         <div className={s.posts}>
-            <div>
-                My Posts
-                <div className={s.posts}>
-                    <div className={s.newPost}>
-                        <textarea name="message" id="" cols="50" rows="5"></textarea>
-                        <button>New Post</button>
-                    </div>
-                    <div>
-                        <Post message='hi' likesCount="0"/>
-                        <Like likesCount="101"/>
-                    </div>
-                    <div>
-                        <Post message='what`s' likesCount="5"/>
-                        <Like likesCount="120"/>
-                    </div>
-                    <div>
-                        <Post message='up' likesCount="10"/>
-                        <Like likesCount="710"/>
-                    </div>
-                </div>
-            </div>
+            {postsElements}
         </div>
-        
     );
 }
 

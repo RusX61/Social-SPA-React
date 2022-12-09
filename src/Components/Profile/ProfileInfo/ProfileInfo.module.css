@@ -1,0 +1,20 @@
+.userInfo{
+    grid-area: u;
+    display: grid;
+    grid-template-areas:
+          "avatar empty bio";
+
+    grid-template-columns: 1fr  1fr 1fr;
+
+}
+
+.avatar img{
+    grid-area: avatar;
+    padding: 10%;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.bio{
+    grid-area: bio;
+}

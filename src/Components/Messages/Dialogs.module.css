@@ -1,0 +1,26 @@
+.dialogs{
+    color: #444444;
+    background-image: url("../../../public/img/bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #fdfdfe;
+    height: 100%;
+    width: 100%;
+}
+
+.dialogItem{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items: center;
+    margin: 10px;
+    background-color: rgba(21, 21, 21, 0.57);
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.dialogItem a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}

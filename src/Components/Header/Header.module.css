@@ -1,6 +1,8 @@
 .header{
     grid-area: h;
     background-color: #36e1a4;
+    background-image: url("../../../public/img/header.png.jpeg");
+    background-size: contain;
 }
 
 .header img{

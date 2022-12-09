@@ -11,7 +11,7 @@ const  Nav = () => {
                 <NavLink to="/subscriptions" className={navData=>navData.isActive ? s.active:s.item}>Subscriptions</NavLink>
             </div>
             <div className={s.item}>
-                <NavLink to="/messages" className={navData=>navData.isActive ? s.active:s.item}>Messages</NavLink>
+                <NavLink to="/dialogs" className={navData=>navData.isActive ? s.active:s.item}>Messages</NavLink>
             </div>
             <div className={s.item}>
                 <NavLink to="/settings" className={navData=>navData.isActive ? s.active:s.item}>Settings</NavLink>

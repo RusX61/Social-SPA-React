@@ -1,6 +1,6 @@
 .nav{
     grid-area: n;
-    background-color: #cbf85a;
+    background-color: #8fd4a7;
 }
 
 .item a{
@@ -9,10 +9,12 @@
 }
 
 .item a.active{
-    color: #054cbe;
+    color: #e7e7e7;
 }
 
 .item{
+    padding: 10px;
     font-size: 20px;
     font-weight: bold;
+    text-shadow: #4d4c4c 1px 0 10px;
 }

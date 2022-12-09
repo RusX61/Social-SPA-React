@@ -1,15 +1,16 @@
-// import React, {Component} from "react";
+import React from "react";
 import './App.css';
 import Header from './Components/Header/Header'
 import Footer from "./Components/Footer/Footer";
 import Nav from "./Components/Nav/Nav";
 import Profile from "./Components/Profile/Profile";
-import Messages from "./Components/Messages/Messages";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import Dialogs from "./Components/Messages/Dialogs";
 import Subscriptions from "./Components/Subscriptions/Subscriptions";
 import Settings from "./Components/Settings/Settings";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
-const App = () => {
+const App = (props) => {
+
   return (
       <BrowserRouter>
         <div className="app-wrapper">
@@ -17,13 +18,12 @@ const App = () => {
             <Nav />
             <div className="app-wrapper-content">
                 <Routes>
-                    <Route path="/profile" element={<Profile/>}/>
+                    <Route path="/profile" element={<Profile postData={props.postData} bio={props.bio}/>}/>
                     <Route path="/subscriptions" element={<Subscriptions/>}/>
-                    <Route path="/messages" element={<Messages/>}/>
+                    <Route path="/dialogs" element={<Dialogs names={props.names} messages={props.messages}/>}/>
                     <Route path="/settings" element={<Settings/>}/>
                 </Routes>
             </div>
-
             <Footer />
         </div>
       </BrowserRouter>

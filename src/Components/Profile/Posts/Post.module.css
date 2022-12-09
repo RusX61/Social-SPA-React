@@ -1,6 +1,43 @@
+.item{
+    margin-top: 30px;
+    background-color: rgba(2, 192, 126, 0.62);
+    border-radius: 5px;
+}
 
-.item img{
+.avatar{
+
+    padding: 10px;
+}
+.avatar img{
     width: 50px;
     border:2px solid;
     border-radius: 50%;
+    padding: 5px;
+}
+
+.text{
+    flex-grow: 1;
+    font-size: 18px;
+    background-color: rgba(240, 248, 255, 0.55);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.stats{
+    padding: 0 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.like{
+    margin-right: 20px;;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.date{
+    margin-left: auto;
 }
