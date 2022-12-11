@@ -1,6 +1,5 @@
 import s from './Posts.module.css'
 import Post from "./Post";
-import NewPost from "../NewPost/NewPost";
 
 const Posts = (props) => {
 let postsElements = props.postData

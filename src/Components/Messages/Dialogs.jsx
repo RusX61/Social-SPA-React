@@ -5,8 +5,8 @@ import Sender from "./Sender/Sender";
 
 const  Dialogs = (props) => {
 
-    let nameElements = props.names.map(n => <Sender name={n.name} id={n.id}/>);
-    let messageElements = props.messages.map(m => <Message message={ m.message} id={m.id}/>);
+    let nameElements = props.messagesPage.names.map(n => <Sender name={n.name} id={n.id}/>);
+    let messageElements = props.messagesPage.messages.map(m => <Message message={ m.message} id={m.id}/>);
 
     return(
         <div className={s.dialogs}>

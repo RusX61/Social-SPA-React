@@ -18,10 +18,18 @@ const App = (props) => {
             <Nav />
             <div className="app-wrapper-content">
                 <Routes>
-                    <Route path="/profile" element={<Profile postData={props.postData} bio={props.bio}/>}/>
-                    <Route path="/subscriptions" element={<Subscriptions/>}/>
-                    <Route path="/dialogs" element={<Dialogs names={props.names} messages={props.messages}/>}/>
-                    <Route path="/settings" element={<Settings/>}/>
+                    <Route path="/profile" element={
+                        <Profile profilePage={props.appState.profilePage}/>}
+                    />
+                    <Route path="/subscriptions" element={
+                        <Subscriptions subscriptionsPage={props.appState.subscriptionsPage}/>}
+                    />
+                    <Route path="/dialogs" element={
+                        <Dialogs messagesPage={props.appState.messagesPage}/>}
+                    />
+                    <Route path="/settings" element={
+                        <Settings settingsPage={props.appState.settingsPage}/>}
+                    />
                 </Routes>
             </div>
             <Footer />

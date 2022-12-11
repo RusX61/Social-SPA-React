@@ -8,11 +8,11 @@ const  Profile = (props) => {
     return(
         <div className={s.profile}>
             <div className={s.top}>
-                <ProfileInfo bio={props.bio}/>
+                <ProfileInfo bio={props.profilePage.bio}/>
                 <NewPost />
             </div>
 
-            <Posts postData={props.postData}/>
+            <Posts postData={props.profilePage.postData}/>
         </div>
 
     );
