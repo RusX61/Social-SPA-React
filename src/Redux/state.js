@@ -1,5 +1,3 @@
-import React from 'react';
-
 let state = {
 
     profilePage:{
@@ -20,8 +18,11 @@ let state = {
 
     },
 
-    subscriptionsPage:{
-
+    communityPage:{
+        followCount:{
+            subscribers:48,
+            subscriptions:52
+        }
     },
 
     messagesPage:{
@@ -43,8 +44,6 @@ let state = {
 
     }
 
-    }
-
-
+}
 
 export default state;

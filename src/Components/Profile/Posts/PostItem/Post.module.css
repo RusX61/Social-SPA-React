@@ -5,11 +5,11 @@
 }
 
 .avatar{
-
+    max-width: 100px;
     padding: 10px;
 }
 .avatar img{
-    width: 50px;
+    max-width: 100%;
     border:2px solid;
     border-radius: 50%;
     padding: 5px;
@@ -27,6 +27,11 @@
     padding: 0 10px 10px 10px;
     display: flex;
     flex-direction: row;
+}
+
+.name{
+    margin-right: 20px;
+    font-weight: 500;
 }
 
 .like{

@@ -9,10 +9,10 @@ const  Profile = (props) => {
         <div className={s.profile}>
             <div className={s.top}>
                 <ProfileInfo bio={props.profilePage.bio}/>
-                <NewPost />
+                <NewPost postData={props.profilePage.postData}/>
             </div>
 
-            <Posts postData={props.profilePage.postData}/>
+            <Posts postData={props.profilePage.postData} bio={props.profilePage.bio}/>
         </div>
 
     );

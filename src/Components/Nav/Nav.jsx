@@ -8,7 +8,7 @@ const  Nav = () => {
                 <NavLink to="/profile" className={navData=>navData.isActive ? s.active:s.item}>Profile</NavLink>
             </div>
             <div className={s.item}>
-                <NavLink to="/subscriptions" className={navData=>navData.isActive ? s.active:s.item}>Subscriptions</NavLink>
+                <NavLink to="/community" className={navData=>navData.isActive ? s.active:s.item}>Community</NavLink>
             </div>
             <div className={s.item}>
                 <NavLink to="/dialogs" className={navData=>navData.isActive ? s.active:s.item}>Messages</NavLink>

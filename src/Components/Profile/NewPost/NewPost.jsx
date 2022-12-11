@@ -1,9 +1,10 @@
 import s from './NewPost.module.css'
 
-const  NewPost = () => {
+const  NewPost = (props) => {
+    let postCount = props.postData.length
     return(
         <div className={s.newPost}>
-            <h3>My Posts</h3>
+            <h3>My Posts ({postCount})</h3>
             <div className="form-group">
                             <textarea
                                 type="text"

@@ -5,7 +5,7 @@ import Footer from "./Components/Footer/Footer";
 import Nav from "./Components/Nav/Nav";
 import Profile from "./Components/Profile/Profile";
 import Dialogs from "./Components/Messages/Dialogs";
-import Subscriptions from "./Components/Subscriptions/Subscriptions";
+import Community from "./Components/Community/Community";
 import Settings from "./Components/Settings/Settings";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
@@ -21,8 +21,8 @@ const App = (props) => {
                     <Route path="/profile" element={
                         <Profile profilePage={props.appState.profilePage}/>}
                     />
-                    <Route path="/subscriptions" element={
-                        <Subscriptions subscriptionsPage={props.appState.subscriptionsPage}/>}
+                    <Route path="/community" element={
+                        <Community communityPage={props.appState.communityPage}/>}
                     />
                     <Route path="/dialogs" element={
                         <Dialogs messagesPage={props.appState.messagesPage}/>}

@@ -1,9 +1,11 @@
 import s from './Posts.module.css'
-import Post from "./Post";
+import Post from "./PostItem/Post";
 
 const Posts = (props) => {
+    let name = props.bio.name;
 let postsElements = props.postData
-    .map(p=><Post
+    .slice(0).reverse().map(p=><Post
+        name = {name}
         message={p.message}
         likesCount={p.likesCount}
         repostCount={p.repostCount}
