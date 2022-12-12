@@ -8,11 +8,13 @@
     grid-template-rows: 2fr 10fr;
     background-size:contain;
     background-repeat: no-repeat;
-    background-color: #2a2a2a;
+    background: -webkit-linear-gradient(180deg, #00133b,#007b72,#16dab9);
+    background: linear-gradient(180deg, #00133b,#007b72,#16dab9);
     color: #f0f8ff;
     height: 100%;
 }
 
 .top{
-   margin: 10px;
+    background-image: url("../../../public/img/BACK-PROFILE.jpg");
+    background-size: cover;
 }

@@ -1,3 +1,7 @@
+let rerenderEntireTree = () => {
+
+};
+
 let state = {
 
     profilePage:{
@@ -15,6 +19,8 @@ let state = {
             {id: 3 , message: 'Good news' , likesCount:60, repostCount:12, date:'03.08.2022'},
             {id: 4 , message: 'Scince blog' , likesCount:111, repostCount:33, date:'04.08.2022'}
         ],
+
+        newPostText:''
 
     },
 
@@ -45,5 +51,27 @@ let state = {
     }
 
 }
+
+export const addPost = () => {
+    let newPost = {
+        id: 5,
+        message:state.profilePage.newPostText,
+        likesCount:0,
+        repostCount:0,
+        date: new Date().toLocaleString()
+    };
+    state.profilePage.postData.push(newPost);
+    state.profilePage.newPostText = '';
+    rerenderEntireTree(state);
+}
+
+export const updateNewPostText = (newText) => {
+    state.profilePage.newPostText = newText;
+    rerenderEntireTree(state);
+};
+
+export const subscribe = (observer) =>{
+    rerenderEntireTree = observer;
+};
 
 export default state;

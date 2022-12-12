@@ -3,10 +3,15 @@ import s from './Header.module.css'
 const  Header = () => {
     return(
        <header className={s.header}>
-           <div>
+           <div className={s.logo}>
                <a href="/">
-                <img src="https://footymedia.fun/wp-content/uploads/2022/07/%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%B8%D0%BA-%D0%BB%D0%BE%D0%B3%D0%BE-%D0%90%D0%A0%D0%A2.jpg" alt="logo"/>
+
+                   <img src="img/header-logo.webp" alt="logo"/>
                </a>
+           </div>
+           <div className={s.slogan}><span>Meme investigators community</span></div>
+           <div className={s.sign}>
+               <a href="/" className="btn btn-secondary btn-md active" role="button" aria-pressed="true">Exit</a>
            </div>
        </header>
     );

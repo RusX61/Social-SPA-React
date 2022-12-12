@@ -8,7 +8,7 @@ import Dialogs from "./Components/Messages/Dialogs";
 import Community from "./Components/Community/Community";
 import Settings from "./Components/Settings/Settings";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-
+import RegForm from "./Components/RegForm/RegForm";
 const App = (props) => {
 
   return (
@@ -19,22 +19,26 @@ const App = (props) => {
             <div className="app-wrapper-content">
                 <Routes>
                     <Route path="/profile" element={
-                        <Profile profilePage={props.appState.profilePage}/>}
+                        <Profile profilePage={props.state.profilePage}
+                                 addPost={props.addPost}
+                                 updateNewPostText={props.updateNewPostText} />}
                     />
                     <Route path="/community" element={
-                        <Community communityPage={props.appState.communityPage}/>}
+                        <Community communityPage={props.state.communityPage}/>}
                     />
                     <Route path="/dialogs" element={
-                        <Dialogs messagesPage={props.appState.messagesPage}/>}
+                        <Dialogs messagesPage={props.state.messagesPage}/>}
                     />
                     <Route path="/settings" element={
-                        <Settings settingsPage={props.appState.settingsPage}/>}
+                        <Settings settingsPage={props.state.settingsPage}/>}
                     />
+                    <Route path="/" element={<RegForm />}/>
                 </Routes>
             </div>
             <Footer />
         </div>
       </BrowserRouter>
+
   );
 }
 
