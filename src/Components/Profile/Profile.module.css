@@ -8,8 +8,6 @@
     grid-template-rows: 2fr 10fr;
     background-size:contain;
     background-repeat: no-repeat;
-    background: -webkit-linear-gradient(180deg, #00133b,#007b72,#16dab9);
-    background: linear-gradient(180deg, #00133b,#007b72,#16dab9);
     color: #f0f8ff;
     height: 100%;
 }

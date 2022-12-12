@@ -10,8 +10,7 @@ const  Profile = (props) => {
             <div>
                 <div className={s.top}>
                     <ProfileInfo bio={props.profilePage.bio}/>
-                </div>
-                <div>
+
                     <NewPost postData={props.profilePage.postData}
                              addPost={props.addPost}
                              updateNewPostText={props.updateNewPostText}

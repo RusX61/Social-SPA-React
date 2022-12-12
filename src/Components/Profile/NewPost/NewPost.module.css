@@ -1,3 +1,12 @@
 .newPost{
-    padding: 10px;
+    padding: 20px;
+}
+
+.newPost button{
+    background: rgba(131, 199, 188, 0.86);
+    border-radius: 0 0 5px 5px;
+}
+
+.newPost textarea{
+    border-radius: 5px 5px 0 0;
 }
