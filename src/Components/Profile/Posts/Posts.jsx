@@ -3,13 +3,16 @@ import Post from "./PostItem/Post";
 
 const Posts = (props) => {
     let name = props.bio.name;
-let postsElements = props.postData
-    .slice(0).reverse().map(p=><Post
-        name = {name}
-        message={p.message}
-        likesCount={p.likesCount}
-        repostCount={p.repostCount}
-        date={p.date}/>)
+
+    let postsElements = props.postData
+    .slice(0).reverse().map(p=>
+        <Post
+            name = {name}
+            message={p.message}
+            likesCount={p.likesCount}
+            repostCount={p.repostCount}
+            date={p.date}
+        />)
 
     return(
         <div className={s.posts}>

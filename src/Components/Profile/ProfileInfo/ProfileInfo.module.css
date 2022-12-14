@@ -16,5 +16,6 @@
 }
 
 .bio{
+    padding: 10%;
     grid-area: bio;
 }

@@ -4,7 +4,7 @@ import Header from './Components/Header/Header'
 import Footer from "./Components/Footer/Footer";
 import Nav from "./Components/Nav/Nav";
 import Profile from "./Components/Profile/Profile";
-import Dialogs from "./Components/Messages/Dialogs";
+import Messages from "./Components/Messages/Messages";
 import Community from "./Components/Community/Community";
 import Settings from "./Components/Settings/Settings";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
@@ -20,14 +20,14 @@ const App = (props) => {
                 <Routes>
                     <Route path="/profile" element={
                         <Profile profilePage={props.state.profilePage}
-                                 addPost={props.addPost}
-                                 updateNewPostText={props.updateNewPostText} />}
+                                 dispatch={props.dispatch}
+                        />}
                     />
                     <Route path="/community" element={
                         <Community communityPage={props.state.communityPage}/>}
                     />
                     <Route path="/dialogs" element={
-                        <Dialogs messagesPage={props.state.messagesPage}/>}
+                        <Messages messagesPage={props.state.messagesPage}/>}
                     />
                     <Route path="/settings" element={
                         <Settings settingsPage={props.state.settingsPage}/>}

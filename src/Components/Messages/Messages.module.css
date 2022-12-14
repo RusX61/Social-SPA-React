@@ -4,14 +4,12 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
-    background-color: #fdfdfe;
     height: 100%;
     width: 100%;
 }
 
 .dialogItem{
-    display: grid;
-    grid-template-columns: 25% 75%;
+    display: flex;
     align-items: center;
     margin: 10px;
     background-color: rgba(21, 21, 21, 0.57);
@@ -19,8 +17,38 @@
     flex-wrap: wrap;
 }
 
-.dialogItem a{
+.dialogItem:hover{
+    background-color: rgba(21, 21, 21, 0.78);
+}
+
+a, a:hover{
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
+}
+
+.avatar{
+    margin: 10px;
+}
+
+.avatar img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60vw;
+}
+
+.name{
+    color: #8ed3a6;
+
+}
+
+.message{
+    flex-grow: 1;
 }
