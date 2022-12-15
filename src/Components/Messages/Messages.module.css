@@ -10,11 +10,10 @@
 
 .dialogItem{
     display: flex;
-    align-items: center;
     margin: 10px;
     background-color: rgba(21, 21, 21, 0.57);
     border-radius: 5px;
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
 }
 
 .dialogItem:hover{
@@ -34,21 +33,45 @@ a, a:hover{
 .avatar img{
     width: 60px;
     border-radius: 50%;
-    margin-right: 50px;
 }
 
 .text{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 60vw;
+    width: 100%;
+
 }
 
 .name{
     color: #8ed3a6;
 
+    padding: 5px;
+
 }
 
 .message{
-    flex-grow: 1;
+    padding: 5px;
+    background-color: rgba(21, 21, 21, 0.78);
+    border-radius: 5px 0 0 5px;
+}
+
+.dialog{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 2fr auto;
+    grid-auto-rows: 100%;
+}
+
+.sender{
+ display: flex;
+}
+
+.messages{
+ height: 70vh;
+}
+
+.input{
+
 }

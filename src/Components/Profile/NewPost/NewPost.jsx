@@ -41,7 +41,6 @@ const  NewPost = (props) => {
                         Post
                     </button>
                 </div>
-
             </div>
         </div>
     );

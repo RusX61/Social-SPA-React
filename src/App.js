@@ -9,6 +9,7 @@ import Community from "./Components/Community/Community";
 import Settings from "./Components/Settings/Settings";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import RegForm from "./Components/RegForm/RegForm";
+import Dialog from "./Components/Messages/Dialog";
 const App = (props) => {
 
   return (
@@ -26,8 +27,11 @@ const App = (props) => {
                     <Route path="/community" element={
                         <Community communityPage={props.state.communityPage}/>}
                     />
-                    <Route path="/dialogs" element={
+                    <Route path="/dialogs" exact={true} element={
                         <Messages messagesPage={props.state.messagesPage}/>}
+                    />
+                    <Route path="/dialog/:id"  element={
+                        <Dialog store={props.store}/>}
                     />
                     <Route path="/settings" element={
                         <Settings settingsPage={props.state.settingsPage}/>}

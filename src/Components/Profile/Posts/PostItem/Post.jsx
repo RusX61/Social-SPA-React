@@ -4,6 +4,7 @@ import Repost from "./Repost";
 import Date from "./Date";
 import Edit from "./Edit";
 import Delete from "./Delete";
+import Comments from "./Comments";
 
 const Post = (props) => {
 
@@ -24,6 +25,7 @@ const Post = (props) => {
                 <div className={s.name}>{props.name}</div>
                 <Like likesCount={props.likesCount}/>
                 <Repost repostCount={props.repostCount}/>
+                <Comments commentsCount={props.commentsCount}/>
                 <Date date={props.date}/>
                 <Edit />
                 <Delete />

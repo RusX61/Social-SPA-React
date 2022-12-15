@@ -11,6 +11,7 @@ const Posts = (props) => {
             message={p.message}
             likesCount={p.likesCount}
             repostCount={p.repostCount}
+            commentsCount={p.commentsCount}
             date={p.date}
         />)
 
