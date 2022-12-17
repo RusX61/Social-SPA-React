@@ -1,7 +1,6 @@
 import s from './NewPost.module.css'
 import React from "react";
-import {addPostActionCreator} from "../../../Redux/state";
-import {updateNewPostActionCreator} from "../../../Redux/state";
+import {addPostActionCreator, updateNewPostActionCreator} from "../../../Redux/profile-reducer";
 
 const  NewPost = (props) => {
     let postCount = props.postData.length
