@@ -3,8 +3,10 @@
 }
 
 .newPost button{
-    background: rgba(131, 199, 188, 0.86);
+    background: rgba(0, 0, 0, 0.71);
     border-radius: 0 0 5px 5px;
+    color: aliceblue;
+    border-color: aliceblue;
 }
 
 .newPost textarea{

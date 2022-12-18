@@ -3,6 +3,7 @@
     padding: 0 20px;
     background: -webkit-linear-gradient(180deg, #00153f,#007b72,#16dab9);
     background: linear-gradient(180deg, #00153f,#007b72,#16dab9);
+    height: fit-content;
 }
 
 .newPost{

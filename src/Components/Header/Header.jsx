@@ -1,4 +1,5 @@
 import s from './Header.module.css'
+import Nav from "./Nav/Nav";
 
 const  Header = () => {
     return(
@@ -9,10 +10,7 @@ const  Header = () => {
                    <img src="img/header-logo.webp" alt="logo"/>
                </a>
            </div>
-           <div className={s.slogan}><span>Meme investigators community</span></div>
-           <div className={s.sign}>
-               <a href="/" className="btn btn-secondary btn-md active" role="button" aria-pressed="true">Exit</a>
-           </div>
+           <div className={s.nav}><Nav/></div>
        </header>
     );
 }

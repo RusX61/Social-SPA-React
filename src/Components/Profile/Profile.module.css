@@ -9,10 +9,12 @@
     background-size:contain;
     background-repeat: no-repeat;
     color: #f0f8ff;
-    height: 100%;
+    overflow: hidden;
+    height: 108vh;
 }
 
 .top{
     background-image: url("../../../public/img/BACK-PROFILE.jpg");
+    background-position: center;
     background-size: cover;
 }

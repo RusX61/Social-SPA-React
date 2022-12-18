@@ -1,20 +1,18 @@
 .app-wrapper{
   display: grid;
   grid-template-areas:
-          "h h"
-          "n c"
-          "f f";
+          "h"
+          "c"
+          "f";
   grid-template-rows: 60px 1fr ;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 3px;
     max-width: 1920px;
     height: 100vh;
-    margin: 0 auto;
 }
 
 
 .app-wrapper-content{
-  background-color: #f0f0f0;
+  width: 47.92%;
+  margin: 0 auto;
   grid-area:c;
 }
 
