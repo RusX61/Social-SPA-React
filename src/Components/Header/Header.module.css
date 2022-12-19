@@ -4,8 +4,7 @@
     position: fixed;
     max-width: 1920px;
     margin-left: 21%;
-    min-height: 60px;
-    max-height: 84px;
+    height: 84px;
     background-color: #000000;
     /*background-image: url("../../../public/img/back-header.png");*/
     /*background-size: contain;*/

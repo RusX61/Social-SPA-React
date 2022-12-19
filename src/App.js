@@ -2,14 +2,13 @@ import React from "react";
 import './App.css';
 import Header from './Components/Header/Header'
 import Footer from "./Components/Footer/Footer";
-import Nav from "./Components/Header/Nav/Nav";
 import Profile from "./Components/Profile/Profile";
 import Messages from "./Components/Messages/Messages";
 import Community from "./Components/Community/Community";
 import Settings from "./Components/Settings/Settings";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import RegForm from "./Components/RegForm/RegForm";
-import Dialog from "./Components/Messages/Dialog";
+import DialogContainer from "./Components/Messages/DialogContainer";
 const App = (props) => {
 
   return (
@@ -19,7 +18,7 @@ const App = (props) => {
             <div className="app-wrapper-content">
                 <Routes>
                     <Route path="/profile" element={
-                        <Profile profilePage={props.state.profilePage}
+                        <Profile store={props.store}
                                  dispatch={props.dispatch}
                         />}
                     />
@@ -30,7 +29,7 @@ const App = (props) => {
                         <Messages messagesPage={props.state.messagesPage}/>}
                     />
                     <Route path="/dialog/:id"  element={
-                        <Dialog store={props.store}/>}
+                        <DialogContainer store={props.store}/>}
                     />
                     <Route path="/settings" element={
                         <Settings settingsPage={props.state.settingsPage}/>}

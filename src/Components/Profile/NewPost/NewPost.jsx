@@ -1,25 +1,22 @@
 import s from './NewPost.module.css'
 import React from "react";
-import {addPostActionCreator, updateNewPostActionCreator} from "../../../Redux/profile-reducer";
 
 const  NewPost = (props) => {
-    let postCount = props.postData.length
 
     let newPostElement = React.createRef();
 
-    let addPost = () => {
-        props.dispatch(addPostActionCreator());
+    let onAddPost = () => {
+        props.addPost();
     };
 
     let onPostChange = () => {
         let text = newPostElement.current.value;
-        let action = updateNewPostActionCreator(text);
-        props.dispatch(action);
+        props.updateNewPostText(text);
     }
 
     return(
         <div className={s.newPost}>
-            <h3>My Posts ({postCount})</h3>
+            <h3>My Posts ({props.postCount})</h3>
             <div className="form-group">
                 <textarea
                     onChange={onPostChange}
@@ -33,7 +30,7 @@ const  NewPost = (props) => {
                 <div className="d-grid gap-2">
                     <button type="button"
                             name="newPost"
-                            onClick={addPost}
+                            onClick={onAddPost}
                             className="btn btn-outline-success btn-lg btn-block"
                             tabIndex="2">
                         Post
